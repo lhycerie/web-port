@@ -1,0 +1,9 @@
+{
+  "name": "lhycerie-portfolio",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Portfolio and Shaders",
+  "dependencies": {
+    "shaders": "^4.0.4"
+  }
+}

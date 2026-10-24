@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="China De Oro — web developer and UI/UX designer.">
+    <meta name="theme-color" content="#000000">
+    <title>China De Oro — Developer &amp; UI/UX Designer</title>
+    <link rel="icon" href="assets/cdo-logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,400;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script type="importmap">
+    { "imports": { "shaders/js": "https://esm.sh/shaders@4.0.4/js" } }
+  </script>
+    <script type="module" src="app.js"></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <!-- hero viewport -->
+    <header id="hero" class="portfolio-shell">
+        <nav class="tabs" aria-label="Portfolio sections">
+            <a href="#about">ABOUT</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#experience">EXPERIENCE</a>
+            <a href="#graphics">GRAPHICS</a>
+            <a href="#certs">CERTS</a>
+        </nav>
+        <section class="hero-bento" aria-labelledby="hero-title">
+            <canvas id="canvas" aria-hidden="true"></canvas>
+
+            <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-navigation"
+                aria-label="Open navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="mobile-navigation" class="mobile-nav-menu" aria-label="Mobile portfolio sections"
+                aria-hidden="true">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#graphics">Graphics</a>
+                <a href="#certs">Certifications</a>
+                <a href="mailto:chinadeoro86@gmail.com">Contact</a>
+            </nav>
+
+            <a class="hero-logo" href="#about" aria-label="China De Oro home">
+                <img src="assets/cdo-logo.svg" alt="CDO logo">
+            </a>
+            <!-- right: role title -->
+            <h1 id="hero-title"><em>developer</em> &amp;<br><em>ui/ux designer</em></h1>
+
+            <!-- left: name in instrument serif -->
+            <div class="hero-name" aria-label="China De Oro">
+                <span class="hero-name-intro">hi, i'm</span>
+                <span class="hero-name-line hero-first-name">China</span>
+                <span class="hero-name-line hero-last-name">De Oro</span>
+            </div>
+
+            <a class="contact-badge" href="mailto:chinadeoro86@gmail.com">CONTACT</a>
+        </section>
+    </header>
+
+    <!-- main portfolio sections -->
+    <main id="main-content" class="portfolio-content">
+
+        <!-- statement section -->
+        <section id="statement" class="statement-section" aria-label="Statement">
+            <!-- 2 assets placed behind the text -->
+            <img class="floating-asset asset-behind asset-behind-blob" src="assets/orange-blob.svg" alt=""
+                aria-hidden="true">
+            <img class="floating-asset asset-behind asset-behind-wave" src="assets/blue-wave.svg" alt=""
+                aria-hidden="true">
+
+            <div class="statement-wrap">
+                <h2 class="statement-heading">
+                    <span id="statement-text">
+                        <span class="statement-word">Crafting</span>
+                        <span class="statement-word accent-serif">clean,</span>
+                        <br>
+                        <span class="statement-word accent-serif">intentional</span>
+                        <span class="statement-word">digital</span>
+                        <span class="statement-word">products</span>
+                        <br>
+                        <span class="statement-word amp">&amp;</span>
+                        <span class="statement-word accent-serif">modern</span>
+                        <span class="statement-word">web</span>
+                        <span class="statement-word">experiences.</span>
+                    </span>
+                </h2>
+            </div>
+
+            <!-- scattered floating assets across the section -->
+            <img class="floating-asset asset-scattered scatter-purple-top" src="assets/purple-flower.svg" alt=""
+                aria-hidden="true">
+            <img class="floating-asset asset-scattered scatter-white-top" src="assets/white-motif.svg" alt=""
+                aria-hidden="true">
+            <img class="floating-asset asset-scattered scatter-green-bottom" src="assets/green-flower.svg" alt=""
+                aria-hidden="true">
+            <img class="floating-asset asset-scattered scatter-purple-bottom" src="assets/purple-flower.svg" alt=""
+                aria-hidden="true">
+        </section>
+
+        <!-- 1. about section -->
+        <section id="about" class="section-block about-section">
+            <div class="section-header-row">
+                <h2 class="section-display-title" aria-label="About">
+                    <span class="projects-letter-sans">A</span><span>B</span><span
+                        class="projects-letter-sans projects-letter-italic">O</span><span
+                        class="projects-letter-sans">U</span><span class="projects-letter-italic">T</span>
+                </h2>
+            </div>
+
+            <img class="floating-asset about-floating-asset about-float-purple" src="assets/purple-flower.svg" alt=""
+                aria-hidden="true">
+            <img class="floating-asset about-floating-asset about-float-orange" src="assets/orange-blob.svg" alt=""
+                aria-hidden="true">
+            <img class="floating-asset about-floating-asset about-float-blue" src="assets/blue-wave.svg" alt=""
+                aria-hidden="true">
+            <img class="floating-asset about-floating-asset about-float-green" src="assets/green-flower.svg" alt=""
+                aria-hidden="true">
+            <img class="floating-asset about-floating-asset about-float-white" src="assets/white-motif.svg" alt=""
+                aria-hidden="true">
+
+            <div class="about-grid">
+                <div class="about-primary-row">
+                    <div class="about-bio bento-card">
+                        <h3 class="about-bio-heading">Who is Me?</h3>
+                        <div class="about-text">
+                            <p>
+                                I'm China <em class="pronounce">(tsi-na)</em>, a <strong>web developer</strong> and
+                                <strong>designer</strong> passionate about building software that makes a difference.
+                            </p>
+                            <p>
+                                Currently pursuing <strong>IT</strong> at the <strong>Polytechnic University of the
+                                    Philippines — Manila</strong>.
+                            </p>
+                            <p>
+                                I focus on creating clean, intuitive <strong>UI/UX</strong>, prioritizing functionality
+                                and clarity. I also <strong>lead teams</strong> of designers and developers to create
+                                seamless digital solutions.
+                            </p>
+                        </div>
+                        <div class="about-bio-cta">
+                            <a href="moreaboutme.html" class="btn-primary">
+                                <span>More about me</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="about-photo bento-card">
+                        <img src="assets/china.webp" alt="China De Oro" class="profile-img">
+                    </div>
+                </div>
+
+                <!-- bottom row: 3 feature bento cards (1 column each) -->
+                <div class="bento-card feature-card feature-purple">
+                    <h3 class="feature-title">Development</h3>
+                    <p class="feature-sub">Full-Stack &amp; Frontend</p>
+                    <p class="feature-desc">HTML, CSS, JS, MySQL, Tailwind, TS, GSAP, Node.js, Python</p>
+                </div>
+
+                <div class="bento-card feature-card feature-blue">
+                    <h3 class="feature-title">UI/UX &amp; Design</h3>
+                    <p class="feature-sub">Digital Product &amp; Media</p>
+                    <p class="feature-desc">Figma, Canva, Photoshop, Illustrator, Prototyping</p>
+                </div>
+
+                <div class="bento-card feature-card feature-green">
+                    <h3 class="feature-title">Project Management</h3>
+                    <p class="feature-sub">Leadership &amp; Management</p>
+                    <p class="feature-desc">WBS, Waterfall, Notion, Kanban, Jira</p>
+                </div>
+            </div>
+
+            <!-- tech stack & tools -->
+            <div class="marquee-section" aria-label="Technology and design tools">
+                <div class="marquee-wrapper">
+                    <div class="marquee-track marquee-left">
+                        <!-- group 1 -->
+                        <div class="marquee-item" title="HTML5"><i class="fa-brands fa-html5 text-orange"></i></div>
+                        <div class="marquee-item" title="CSS3"><i class="fa-brands fa-css3-alt text-blue"></i></div>
+                        <div class="marquee-item" title="JavaScript"><img src="assets/javascript.svg" alt="JavaScript"
+                                class="tech-icon-img"></div>
+                        <div class="marquee-item" title="TypeScript"><img src="assets/typescript.svg" alt="TypeScript"
+                                class="tech-icon-img"></div>
+                        <div class="marquee-item" title="Tailwind CSS"><img src="assets/tech/tailwindcss.svg"
+                                alt="Tailwind CSS" class="tech-icon-img"></div>
+                        <div class="marquee-item" title="Node.js"><i class="fa-brands fa-node-js text-lime"></i></div>
+                        <div class="marquee-item" title="Python"><i class="fa-brands fa-python text-yellow"></i></div>
+                        <div class="marquee-item" title="MySQL"><img src="assets/mysql.svg" alt="MySQL"
+                                class="tech-icon-img"></div>
+                        <div class="marquee-item" title="Figma"><i class="fa-brands fa-figma text-purple"></i></div>
+                        <div class="marquee-item" title="Adobe Photoshop"><img src="assets/tech/adobe-photoshop.svg"
+                                alt="Adobe Photoshop" class="tech-icon-img"></div>
+                        <div class="marquee-item" title="Adobe Illustrator"><img src="assets/tech/adobe-illustrator.svg"
+                                alt="Adobe Illustrator" class="tech-icon-img"></div>
+                        <div class="marquee-item" title="Canva"><img src="assets/tech/canva.svg" alt="Canva"
+                                class="tech-icon-img"></div>
+                        <div class="marquee-item" title="Notion"><img src="assets/tech/notion.svg" alt="Notion"
+                                class="tech-icon-img"></div>
+                        <div class="marquee-item" title="VS Code"><img src="assets/tech/vscode.svg"
+                                alt="Visual Studio Code" class="tech-icon-img"></div>
+                        <div class="marquee-item" title="Git"><i class="fa-brands fa-git-alt text-orange"></i></div>
+                        <div class="marquee-item" title="GitHub"><i class="fa-brands fa-github text-white"></i></div>
+                        <div class="marquee-item" title="Jira"><img src="assets/tech/jira.svg" alt="Jira"
+                                class="tech-icon-img"></div>
+
+                        <!-- group 2 (duplicated for seamless loop) -->
+                        <div class="marquee-item" aria-hidden="true"><i class="fa-brands fa-html5 text-orange"></i>
+                        </div>
+                        <div class="marquee-item" aria-hidden="true"><i class="fa-brands fa-css3-alt text-blue"></i>
+                        </div>
+                        <div class="marquee-item" aria-hidden="true"><img src="assets/javascript.svg" alt=""
+                                class="tech-icon-img"></div>
+                        <div class="marquee-item" aria-hidden="true"><img src="assets/typescript.svg" alt=""
+                                class="tech-icon-img"></div>
+                        <div class="marquee-item" aria-hidden="true"><img src="assets/tech/tailwindcss.svg" alt=""
+                                class="tech-icon-img"></div>
+                        <div class="marquee-item" aria-hidden="true"><i class="fa-brands fa-node-js text-lime"></i>
+                        </div>
+                        <div class="marquee-item" aria-hidden="true"><i class="fa-brands fa-python text-yellow"></i>
+                        </div>
+                        <div class="marquee-item" aria-hidden="true"><img src="assets/mysql.svg" alt=""
+                                class="tech-icon-img"></div>
+                        <div class="marquee-item" aria-hidden="true"><i class="fa-brands fa-figma text-purple"></i>
+                        </div>
+                        <div class="marquee-item" aria-hidden="true"><img src="assets/tech/adobe-photoshop.svg" alt=""
+                                class="tech-icon-img"></div>
+                        <div class="marquee-item" aria-hidden="true"><img src="assets/tech/adobe-illustrator.svg" alt=""
+                                class="tech-icon-img"></div>
+                        <div class="marquee-item" aria-hidden="true"><img src="assets/tech/canva.svg" alt=""
+                                class="tech-icon-img"></div>
+                        <div class="marquee-item" aria-hidden="true"><img src="assets/tech/notion.svg" alt=""
+                                class="tech-icon-img"></div>
+                        <div class="marquee-item" aria-hidden="true"><img src="assets/tech/vscode.svg" alt=""
+                                class="tech-icon-img"></div>
+                        <div class="marquee-item" aria-hidden="true"><i class="fa-brands fa-git-alt text-orange"></i>
+                        </div>
+                        <div class="marquee-item" aria-hidden="true"><i class="fa-brands fa-github text-white"></i>
+                        </div>
+                        <div class="marquee-item" aria-hidden="true"><img src="assets/tech/jira.svg" alt=""
+                                class="tech-icon-img"></div>
+                    </div>
+                </div>
+            </div>
+
+            <section id="github-history" class="github-history" aria-label="GitHub contribution history">
+                <a class="github-history-link" href="https://github.com/lhycerie" target="_blank"
+                    rel="noopener noreferrer" aria-label="View lhycerie's GitHub profile">
+                    <div class="github-chart-scroll" aria-label="Scrollable GitHub contribution history">
+                        <div id="github-contribution-grid" class="github-contribution-grid" role="img"
+                            aria-label="Loading GitHub contribution history" aria-busy="true"></div>
+                    </div>
+                </a>
+            </section>
+        </section>
+
+        <!-- 2. projects section -->
+        <section id="projects" class="section-block projects-section">
+            <img class="floating-asset section-floating-asset projects-float-green" src="assets/green-flower.svg" alt=""
+                aria-hidden="true">
+            <img class="floating-asset section-floating-asset projects-float-blue" src="assets/blue-wave.svg" alt=""
+                aria-hidden="true">
+            <h2 class="projects-display-title" aria-label="Projects">
+                <span class="projects-letter-sans">P</span><span>R</span><span
+                    class="projects-letter-sans projects-letter-italic">O</span><span
+                    class="projects-letter-sans">J</span><span>E</span><span class="projects-letter-italic">CTS</span>
+            </h2>
+
+            <div class="projects-grid">
+                <article class="project-card project-orange bento-card" onclick="openProjectModal('modal-iskofound')"
+                    tabindex="0" onkeydown="handleProjectCardKey(event, 'modal-iskofound')" role="button"
+                    aria-label="Open iSKOFound project details">
+                    <div class="project-category-tab">UI/UX DESIGN</div>
+                    <div class="project-thumb-box">
+                        <div class="project-inner-frame">
+                            <video autoplay muted loop playsinline preload="metadata">
+                                <source src="assets/proj/iskofound.mp4" type="video/mp4">
+                                <img src="assets/proj/iskofound.gif" alt="iSKOFound mobile app interface"
+                                    loading="lazy">
+                            </video>
+                        </div>
+                    </div>
+                    <h3 class="project-name">iSKOFound: Mobile App</h3>
+                    <ul class="project-stack" aria-label="iSKOFound technology stack">
+                        <li title="Figma"><i class="fa-brands fa-figma tech-figma" aria-hidden="true"></i><span
+                                class="sr-only">Figma</span></li>
+                    </ul>
+                </article>
+
+                <article class="project-card project-purple bento-card" onclick="openProjectModal('modal-landbank')"
+                    tabindex="0" onkeydown="handleProjectCardKey(event, 'modal-landbank')" role="button"
+                    aria-label="Open LandBank redesign project details">
+                    <div class="project-category-tab">UI/UX DESIGN</div>
+                    <div class="project-thumb-box">
+                        <div class="project-inner-frame">
+                            <video autoplay muted loop playsinline preload="metadata">
+                                <source src="assets/proj/landbank.mp4" type="video/mp4">
+                                <img src="assets/proj/landbank.gif" alt="LandBank website redesign" loading="lazy">
+                            </video>
+                        </div>
+                    </div>
+                    <h3 class="project-name">LandBank Redesign</h3>
+                    <ul class="project-stack" aria-label="LandBank Redesign technology stack">
+                        <li title="Figma"><i class="fa-brands fa-figma tech-figma" aria-hidden="true"></i><span
+                                class="sr-only">Figma</span></li>
+                    </ul>
+
+                </article>
+
+                <article class="project-card project-green bento-card" onclick="openProjectModal('modal-purpose-pinoy')"
+                    tabindex="0" onkeydown="handleProjectCardKey(event, 'modal-purpose-pinoy')" role="button"
+                    aria-label="Open Purpose Pinoy project details">
+                    <div class="project-category-tab">WEBSITE</div>
+                    <div class="project-thumb-box">
+                        <div class="project-inner-frame">
+                            <img src="assets/proj/purppinoy.webp" alt="Purpose Pinoy website" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="project-name">Purpose Pinoy Website</h3>
+                    <ul class="project-stack" aria-label="Purpose Pinoy technology stack">
+                        <li title="Tailwind CSS"><img src="assets/tech/tailwindcss.svg" alt=""><span
+                                class="sr-only">Tailwind CSS</span></li>
+                        <li title="GitHub"><i class="fa-brands fa-github tech-github" aria-hidden="true"></i><span
+                                class="sr-only">GitHub</span></li>
+                        <li title="Cloudflare"><i class="fa-brands fa-cloudflare tech-cloudflare"
+                                aria-hidden="true"></i><span class="sr-only">Cloudflare</span></li>
+                    </ul>
+                </article>
+
+                <article class="project-card project-blue bento-card" onclick="openProjectModal('modal-epds')"
+                    tabindex="0" onkeydown="handleProjectCardKey(event, 'modal-epds')" role="button"
+                    aria-label="Open ePDS Portal project details">
+                    <div class="project-category-tab">WEBSITE</div>
+                    <div class="project-thumb-box">
+                        <div class="project-inner-frame">
+                            <video autoplay muted loop playsinline preload="metadata">
+                                <source src="assets/proj/epds.mp4" type="video/mp4">
+                                <img src="assets/proj/epds.gif" alt="ePDS Portal website" loading="lazy">
+                            </video>
+                        </div>
+                    </div>
+                    <h3 class="project-name">ePDS Portal</h3>
+                    <ul class="project-stack" aria-label="ePDS Portal technology stack">
+                        <li title="HTML5"><i class="fa-brands fa-html5 tech-html" aria-hidden="true"></i><span
+                                class="sr-only">HTML5</span></li>
+                        <li title="CSS3"><i class="fa-brands fa-css3-alt tech-css" aria-hidden="true"></i><span
+                                class="sr-only">CSS3</span></li>
+                        <li title="JavaScript"><i class="fa-brands fa-js tech-javascript" aria-hidden="true"></i><span
+                                class="sr-only">JavaScript</span></li>
+                        <li title="Node.js"><i class="fa-brands fa-node-js tech-node" aria-hidden="true"></i><span
+                                class="sr-only">Node.js</span></li>
+                        <li title="MySQL"><img src="assets/mysql.svg" alt=""><span class="sr-only">MySQL</span></li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- 3. experience / roles section -->
+        <section id="experience" class="section-block">
+            <div class="section-header-row">
+                <h2 class="section-display-title" aria-label="Experience">
+                    <span class="projects-letter-sans">E</span><span>X</span><span
+                        class="projects-letter-sans projects-letter-italic">P</span><span
+                        class="projects-letter-sans">E</span><span>R</span><span
+                        class="projects-letter-italic">IENCE</span>
+                </h2>
+            </div>
+
+            <div class="roles-list">
+                <!-- role 4: purple flower -->
+                <div class="role-item" data-cursor-asset="assets/purple-flower.svg">
+                    <div class="role-meta">
+                        <h3 class="role-title"><em>Frontend AI Engineer Intern</em></h3>
+                        <p class="role-org">FlyRank AI</p>
+                    </div>
+                    <span class="role-badge">October 2026 - Present</span>
+                </div>
+
+                <!-- role 2: blue wave -->
+                <div class="role-item" data-cursor-asset="assets/blue-wave.svg">
+                    <div class="role-meta">
+                        <h3 class="role-title"><em>UI/UX Learning Co-Lead</em></h3>
+                        <p class="role-org">Google Developer Groups on Campus PUP</p>
+                    </div>
+                    <span class="role-badge">October 2026 - Present</span>
+                </div>
+
+                <!-- role 3: orange blob -->
+                <div class="role-item" data-cursor-asset="assets/orange-blob.svg">
+                    <div class="role-meta">
+                        <h3 class="role-title"><em>Visual/Graphics Head</em></h3>
+                        <p class="role-org">PUP CCIS Student Council</p>
+                    </div>
+                    <span class="role-badge">March 2026 - Present</span>
+                </div>
+
+                <!-- role 4: green flower -->
+                <div class="role-item" data-cursor-asset="assets/green-flower.svg">
+                    <div class="role-meta">
+                        <h3 class="role-title"><em>IT Head</em></h3>
+                        <p class="role-org">Purpose Pinoy</p>
+                    </div>
+                    <span class="role-badge">November 2025 - October 2026</span>
+                </div>
+
+                <div class="roles-cta">
+                    <a href="roles.html" class="btn-primary">
+                        <span>See full timeline</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. graphics & visual design section -->
+        <section id="graphics" class="section-block">
+            <div class="section-header-row">
+                <h2 class="section-display-title" aria-label="Graphics">
+                    <span class="projects-letter-sans">G</span><span>R</span><span
+                        class="projects-letter-sans projects-letter-italic">A</span><span
+                        class="projects-letter-sans">P</span><span>H</span><span
+                        class="projects-letter-italic">ICS</span>
+                </h2>
+            </div>
+
+            <div class="graphics-marquee-container">
+                <!-- row 1 -->
+                <div class="graphics-row-wrap">
+                    <div class="graphics-track graphics-left">
+                        <div class="graphic-card"><img src="assets/graphics/graphic-1.jpg" alt="Women in STEM"
+                                loading="lazy"><span class="graphic-caption">Women in STEM</span></div>
+                        <div class="graphic-card wide-graphic"><img src="assets/graphics/graphic-6.webp"
+                                alt="Meet the Performers" loading="lazy"><span class="graphic-caption">Meet the
+                                Performers</span></div>
+                        <div class="graphic-card"><img src="assets/graphics/graphic-2.jpg" alt="Happy Birthday Pubmat"
+                                loading="lazy"><span class="graphic-caption">Happy Birthday Pubmat</span></div>
+                        <div class="graphic-card"><img src="assets/graphics/graphic-4.jpg" alt="March Lotus Calendar"
+                                loading="lazy"><span class="graphic-caption">March Lotus Calendar</span></div>
+                        <div class="graphic-card"><img src="assets/graphics/graphic-22.webp" alt="Elections Poster"
+                                loading="lazy"><span class="graphic-caption">Elections Poster</span></div>
+                        <div class="graphic-card wide-graphic"><img src="assets/graphics/graphic-8.webp"
+                                alt="SAMASA CCIS Elections" loading="lazy"><span class="graphic-caption">SAMASA CCIS
+                                Elections</span></div>
+                        <div class="graphic-card"><img src="assets/graphics/graphic-5.jpg" alt="Tala and Sinag"
+                                loading="lazy"><span class="graphic-caption">Tala and Sinag</span></div>
+                        <!-- duplicated for loop -->
+                        <div class="graphic-card"><img src="assets/graphics/graphic-1.jpg" alt="Women in STEM"
+                                loading="lazy"><span class="graphic-caption">Women in STEM</span></div>
+                        <div class="graphic-card wide-graphic"><img src="assets/graphics/graphic-6.webp"
+                                alt="Meet the Performers" loading="lazy"><span class="graphic-caption">Meet the
+                                Performers</span></div>
+                        <div class="graphic-card"><img src="assets/graphics/graphic-2.jpg" alt="Happy Birthday Pubmat"
+                                loading="lazy"><span class="graphic-caption">Happy Birthday Pubmat</span></div>
+                        <div class="graphic-card"><img src="assets/graphics/graphic-4.jpg" alt="March Lotus Calendar"
+                                loading="lazy"><span class="graphic-caption">March Lotus Calendar</span></div>
+                        <div class="graphic-card"><img src="assets/graphics/graphic-22.webp" alt="Elections Poster"
+                                loading="lazy"><span class="graphic-caption">Elections Poster</span></div>
+                        <div class="graphic-card wide-graphic"><img src="assets/graphics/graphic-21.webp"
+                                alt="SAMASA CCIS Elections" loading="lazy"><span class="graphic-caption">SAMASA CCIS
+                                Elections</span></div>
+                        <div class="graphic-card"><img src="assets/graphics/graphic-5.jpg" alt="Tala and Sinag"
+                                loading="lazy"><span class="graphic-caption">Tala and Sinag</span></div>
+                    </div>
+                </div>
+
+                <!-- row 2 -->
+                <div class="graphics-row-wrap">
+                    <div class="graphics-track graphics-right">
+                        <div class="graphic-card"><img src="assets/graphics/graphic-4.jpg" alt="March Lotus Calendar"
+                                loading="lazy"><span class="graphic-caption">March Lotus Calendar</span></div>
+                        <div class="graphic-card"><img src="assets/graphics/graphic-5.jpg" alt="Tala and Sinag"
+                                loading="lazy"><span class="graphic-caption">Tala and Sinag</span></div>
+                        <div class="graphic-card"><img src="assets/graphics/graphic-3.jpg" alt="AWS Cloud Clubs"
+                                loading="lazy"><span class="graphic-caption">AWS Cloud Clubs</span></div>
+                        <div class="graphic-card wide-graphic"><img src="assets/graphics/graphic-7.webp"
+                                alt="HackManila 2026" loading="lazy"><span class="graphic-caption">HackManila
+                                2026</span></div>
+                        <div class="graphic-card portrait-graphic"><img src="assets/graphics/graphic-21.webp"
+                                alt="SAMASA CCIS Elections" loading="lazy"><span class="graphic-caption">SAMASA CCIS
+                                Elections</span></div>
+                        <div class="graphic-card"><img src="assets/graphics/graphic-1.jpg" alt="Women in STEM"
+                                loading="lazy"><span class="graphic-caption">Women in STEM</span></div>
+                        <div class="graphic-card wide-graphic"><img src="assets/graphics/graphic-9.webp"
+                                alt="AFK Event Highlights" loading="lazy"><span class="graphic-caption">AFK Event
+                                Highlights</span></div>
+                        <!-- duplicated for seamless loop -->
+                        <div class="graphic-card"><img src="assets/graphics/graphic-4.jpg" alt="March Lotus Calendar"
+                                loading="lazy"><span class="graphic-caption">March Lotus Calendar</span></div>
+                        <div class="graphic-card"><img src="assets/graphics/graphic-5.jpg" alt="Tala and Sinag"
+                                loading="lazy"><span class="graphic-caption">Tala and Sinag</span></div>
+                        <div class="graphic-card"><img src="assets/graphics/graphic-3.jpg" alt="AWS Cloud Clubs"
+                                loading="lazy"><span class="graphic-caption">AWS Cloud Clubs</span></div>
+                        <div class="graphic-card wide-graphic"><img src="assets/graphics/graphic-7.webp"
+                                alt="HackManila 2026" loading="lazy"><span class="graphic-caption">HackManila
+                                2026</span></div>
+                        <div class="graphic-card portrait-graphic"><img src="assets/graphics/graphic-21.webp"
+                                alt="SAMASA CCIS Elections" loading="lazy"><span class="graphic-caption">SAMASA CCIS
+                                Elections</span>
+                        </div>
+                        <div class="graphic-card"><img src="assets/graphics/graphic-1.jpg" alt="Women in STEM"
+                                loading="lazy"><span class="graphic-caption">Women in STEM</span></div>
+                        <div class="graphic-card wide-graphic"><img src="assets/graphics/graphic-9.webp"
+                                alt="AFK Event Highlights" loading="lazy"><span class="graphic-caption">AFK Event
+                                Highlights</span></div>
+                    </div>
+                </div>
+
+                <div class="graphics-cta">
+                    <a href="graphics.html" class="btn-primary">
+                        <span>Explore full gallery</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. certifications section -->
+        <section id="certs" class="section-block">
+            <img class="floating-asset section-floating-asset certs-float-orange" src="assets/orange-blob.svg" alt=""
+                aria-hidden="true">
+            <img class="floating-asset section-floating-asset certs-float-green" src="assets/green-flower.svg" alt=""
+                aria-hidden="true">
+            <div class="section-header-row">
+                <h2 class="section-display-title" aria-label="Certifications">
+                    <span class="projects-letter-sans">C</span><span>E</span><span
+                        class="projects-letter-sans projects-letter-italic">R</span><span
+                        class="projects-letter-sans">T</span><span>I</span><span
+                        class="projects-letter-italic">FICATIONS</span>
+                </h2>
+            </div>
+
+            <div class="certs-grid">
+                <!-- 1. google ux design -->
+                <a href="https://www.coursera.org/account/accomplishments/professional-cert/GASSE0NU828Y"
+                    target="_blank" rel="noopener noreferrer" class="cert-card bento-card cert-wide">
+                    <div class="cert-watermark"><img src="assets/google-logo.svg" alt="" aria-hidden="true"></div>
+                    <div class="cert-content">
+                        <div class="cert-top">
+                            <div class="cert-issuer"><img src="assets/google-logo.svg" alt="Google"></div>
+                        </div>
+                        <h3 class="cert-title">Google UX Design Professional</h3>
+                    </div>
+                    <div class="cert-bottom">
+                        <span class="cert-pill"><span>View credentials</span> <i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                    </div>
+                </a>
+
+                <!-- 2. google ai essentials -->
+                <a href="https://coursera.org/share/654fe56dcbf7249943c69445ea5de8a3" target="_blank"
+                    rel="noopener noreferrer" class="cert-card bento-card">
+                    <div class="cert-watermark"><img src="assets/google-logo.svg" alt="" aria-hidden="true"></div>
+                    <div class="cert-content">
+                        <div class="cert-top">
+                            <div class="cert-issuer"><img src="assets/google-logo.svg" alt="Google">
+                            </div>
+                        </div>
+                        <h3 class="cert-title">Google AI Essentials</h3>
+                    </div>
+                    <div class="cert-bottom">
+                        <span class="cert-pill"><span>View credentials</span> <i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                    </div>
+                </a>
+
+                <!-- 3. cisco networking basics -->
+                <a href="https://www.credly.com/badges/4f6e6f2a-1b72-468e-a7cd-1a6f1661956b" target="_blank"
+                    rel="noopener noreferrer" class="cert-card bento-card">
+                    <div class="cert-watermark"><img src="assets/cisco-logo.svg" alt="" aria-hidden="true">
+                    </div>
+                    <div class="cert-content">
+                        <div class="cert-top">
+                            <div class="cert-issuer"><img src="assets/cisco-logo.svg" alt="Cisco"></div>
+                        </div>
+                        <h3 class="cert-title">CISCO Networking Basics</h3>
+                    </div>
+                    <div class="cert-bottom">
+                        <span class="cert-pill"><span>View credentials</span> <i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                    </div>
+                </a>
+
+                <!-- 4. pmi essentials: seven ai project patterns -->
+                <a href="https://www.credly.com/badges/1fd1a49f-4107-4816-88e9-aea7d5428641/public_url" target="_blank"
+                    rel="noopener noreferrer" class="cert-card bento-card">
+                    <div class="cert-watermark"><img src="assets/pmi-logo-transparent.png" alt="" aria-hidden="true">
+                    </div>
+                    <div class="cert-content">
+                        <div class="cert-top">
+                            <div class="cert-issuer"><img src="assets/pmi-logo-transparent.png" alt="PMI"></div>
+                        </div>
+                        <h3 class="cert-title">PMI® Essentials: Seven AI Project Patterns</h3>
+                    </div>
+                    <div class="cert-bottom">
+                        <span class="cert-pill"><span>View credentials</span> <i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- 6. contact cta section -->
+        <section id="contact" class="contact-cta-section">
+            <img class="floating-asset section-floating-asset contact-float-purple" src="assets/purple-flower.svg"
+                alt="" aria-hidden="true">
+            <img class="floating-asset section-floating-asset contact-float-green" src="assets/green-flower.svg" alt=""
+                aria-hidden="true">
+            <img class="floating-asset section-floating-asset contact-float-blue" src="assets/blue-wave.svg" alt=""
+                aria-hidden="true">
+            <div class="contact-cta-wrap">
+                <h2 class="section-display-title contact-cta-title" aria-label="Let's work together">
+                    <span class="projects-letter-sans">L</span><span>E</span><span
+                        class="projects-letter-sans projects-letter-italic">T</span><span
+                        class="projects-letter-sans">'</span><span>S</span> <span
+                        class="projects-letter-sans">W</span><span>O</span><span
+                        class="projects-letter-italic">R</span><span class="projects-letter-sans">K</span> <span
+                        class="projects-letter-sans">T</span><span>O</span><span
+                        class="projects-letter-sans projects-letter-italic">G</span><span>E</span><span
+                        class="projects-letter-sans">T</span><span>H</span><span
+                        class="projects-letter-italic">ER</span>
+                </h2>
+                <p class="contact-cta-desc">
+                    <span class="contact-copy-line">Have a new project, an open role, or just want to connect?</span>
+                    <span class="contact-copy-line">My inbox is always open.</span>
+                </p>
+                <div class="contact-actions">
+                    <a href="mailto:chinadeoro86@gmail.com" class="btn-primary btn-large">
+                        <span>Send an Email</span>
+                    </a>
+                    <a href="https://docs.google.com/document/d/1XfqsxC9pa2fqTujdYsi4zwqzz6N1YO5khrbL4adXYJo/edit?usp=sharing"
+                        target="_blank" rel="noopener noreferrer" class="btn-secondary btn-large">
+                        <span>Resume</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer-wrap">
+        <div class="footer-top">
+            <div class="footer-col">
+                <h2 class="footer-col-title">Navigation</h2>
+                <ul class="footer-nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#graphics">Graphics</a></li>
+                    <li><a href="#certs">Certifications</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h2 class="footer-col-title">Social</h2>
+                <ul class="footer-nav">
+                    <li><a href="https://github.com/lhycerie" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/china-de-oro/" target="_blank"
+                            rel="noopener noreferrer">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="footer-name" aria-label="China De Oro">
+            <span>China <i>De Oro</i></span>
+        </p>
+
+        <div class="footer-bottom">
+            <span>&copy; 2026 China De Oro. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <!-- project detail modals -->
+    <!-- modal 1: iskofound -->
+    <div id="modal-iskofound" class="modal-backdrop" data-lenis-prevent role="dialog" aria-modal="true"
+        aria-labelledby="modal-iskofound-title" aria-hidden="true" inert
+        onclick="handleBackdropClick(event, 'modal-iskofound')">
+        <div class="modal-dialog bento-card" data-lenis-prevent>
+            <button class="modal-close-btn" onclick="closeProjectModal('modal-iskofound')"
+                aria-label="Close modal">✕</button>
+            <h3 id="modal-iskofound-title" class="modal-title">iSKOFound Mobile UI/UX</h3>
+            <div class="modal-preview">
+                <video autoplay muted loop playsinline preload="metadata">
+                    <source src="assets/proj/iskofound.mp4" type="video/mp4">
+                    <img src="assets/proj/iskofound.gif" alt="iSKOFound Mockup">
+                </video>
+            </div>
+            <div class="modal-tags">
+                <span class="pill-tag"><i class="fa-brands fa-figma text-purple"></i> Figma</span>
+                <span class="pill-tag"><i class="fa-solid fa-compass-drafting text-lime"></i> UI/UX Design</span>
+            </div>
+            <h4 class="modal-section-title">Key Responsibilities &amp; Design Process</h4>
+            <ul class="modal-list">
+                <li><span>WBS/Scrumfall lead project manager and lead UI/UX designer.</span></li>
+                <li><span>Designed 80+ high-fidelity screens for the campus lost-and-found app.</span></li>
+                <li><span>Conducted user interviews, constructed user personas, and ensured WCAG accessibility
+                        compliance.</span></li>
+            </ul>
+            <a href="https://www.figma.com/design/6d7gkHYTHNXRh6M5TPlm5C/iSKOFound---Group-4?node-id=20-8&t=bHCpUucmgSFpxTCG-1"
+                target="_blank" rel="noopener noreferrer" class="btn-primary modal-action-btn">
+                <span>View</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- modal 2: landbank redesign -->
+    <div id="modal-landbank" class="modal-backdrop" data-lenis-prevent role="dialog" aria-modal="true"
+        aria-labelledby="modal-landbank-title" aria-hidden="true" inert
+        onclick="handleBackdropClick(event, 'modal-landbank')">
+        <div class="modal-dialog bento-card" data-lenis-prevent>
+            <button class="modal-close-btn" onclick="closeProjectModal('modal-landbank')"
+                aria-label="Close modal">✕</button>
+            <h3 id="modal-landbank-title" class="modal-title">LandBank Redesign</h3>
+            <div class="modal-preview">
+                <video autoplay muted loop playsinline preload="metadata">
+                    <source src="assets/proj/landbank.mp4" type="video/mp4">
+                    <img src="assets/proj/landbank.gif" alt="LandBank website redesign">
+                </video>
+            </div>
+            <div class="modal-tags">
+                <span class="pill-tag"><i class="fa-brands fa-figma text-purple"></i> Figma</span>
+                <span class="pill-tag"><i class="fa-solid fa-compass-drafting text-lime"></i> UI/UX Design</span>
+            </div>
+            <h4 class="modal-section-title">Key Responsibilities &amp; Design Process</h4>
+            <ul class="modal-list">
+                <li><span>Redesigned the user interface for the LandBank mobile application.</span></li>
+                <li><span>Created high-fidelity mockups and interactive prototype to communicate design ideas.</span>
+                </li>
+            </ul>
+            <a href="https://www.figma.com/community/file/1691795597908161807/landbank-bank-app-redesign"
+                target="_blank" rel="noopener noreferrer" class="btn-primary modal-action-btn">
+                <span>View</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- modal 3: purpose pinoy -->
+    <div id="modal-purpose-pinoy" class="modal-backdrop" data-lenis-prevent role="dialog" aria-modal="true"
+        aria-labelledby="modal-purpose-pinoy-title" aria-hidden="true" inert
+        onclick="handleBackdropClick(event, 'modal-purpose-pinoy')">
+        <div class="modal-dialog bento-card" data-lenis-prevent>
+            <button class="modal-close-btn" onclick="closeProjectModal('modal-purpose-pinoy')"
+                aria-label="Close modal">✕</button>
+            <h3 id="modal-purpose-pinoy-title" class="modal-title">Purpose Pinoy</h3>
+            <div class="modal-preview">
+                <img src="assets/proj/purppinoy.webp" alt="Purpose Pinoy Mockup">
+            </div>
+            <div class="modal-tags">
+                <span class="pill-tag"><img class="tech-logo" src="assets/tech/tailwindcss.svg" alt=""> Tailwind
+                    CSS</span>
+                <span class="pill-tag"><i class="fa-brands fa-github tech-github" aria-hidden="true"></i> Git /
+                    GitHub</span>
+                <span class="pill-tag"><i class="fa-solid fa-cloud text-lime" aria-hidden="true"></i> Netlify</span>
+                <span class="pill-tag"><i class="fa-brands fa-cloudflare tech-cloudflare" aria-hidden="true"></i>
+                    Cloudflare</span>
+            </div>
+            <h4 class="modal-section-title">Key Responsibilities &amp; Architecture</h4>
+            <ul class="modal-list">
+                <li><span>Deployment architecture, automated CI/CD pipelines, and custom domain configuration.</span>
+                </li>
+                <li><span>SSL/TLS lifecycle, HTTP security headers, and transactional email routing.</span></li>
+                <li><span>Modern, accessible UI/UX and fully responsive front-end development.</span></li>
+            </ul>
+            <a href="https://purposepinoy.org/" target="_blank" rel="noopener noreferrer"
+                class="btn-primary modal-action-btn">
+                <span>View</span>
+
+            </a>
+        </div>
+    </div>
+
+    <!-- modal 4: epds portal -->
+    <div id="modal-epds" class="modal-backdrop" data-lenis-prevent role="dialog" aria-modal="true"
+        aria-labelledby="modal-epds-title" aria-hidden="true" inert onclick="handleBackdropClick(event, 'modal-epds')">
+        <div class="modal-dialog bento-card" data-lenis-prevent>
+            <button class="modal-close-btn" onclick="closeProjectModal('modal-epds')"
+                aria-label="Close modal">✕</button>
+            <h3 id="modal-epds-title" class="modal-title">ePDS Portal</h3>
+            <div class="modal-preview">
+                <video autoplay muted loop playsinline preload="metadata">
+                    <source src="assets/proj/epds.mp4" type="video/mp4">
+                    <img src="assets/proj/epds.gif" alt="ePDS Portal Mockup">
+                </video>
+            </div>
+            <div class="modal-tags">
+                <span class="pill-tag"><i class="fa-brands fa-html5 tech-html" aria-hidden="true"></i> HTML</span>
+                <span class="pill-tag"><i class="fa-brands fa-css3-alt tech-css" aria-hidden="true"></i> CSS</span>
+                <span class="pill-tag"><i class="fa-brands fa-js tech-javascript" aria-hidden="true"></i>
+                    JavaScript</span>
+                <span class="pill-tag"><i class="fa-brands fa-node-js tech-node" aria-hidden="true"></i> Node.js /
+                    Express</span>
+                <span class="pill-tag"><img class="tech-logo" src="assets/mysql.svg" alt=""> MySQL</span>
+                <span class="pill-tag"><i class="fa-solid fa-code-branch tech-api" aria-hidden="true"></i> REST
+                    API</span>
+            </div>
+            <h4 class="modal-section-title">Key Responsibilities &amp; Full-Stack Architecture</h4>
+            <ul class="modal-list">
+                <li><span>Full-stack web application for organizational profile and document processing.</span></li>
+                <li><span>Frontend client featuring multi-step form validation and authenticated session state.</span>
+                </li>
+                <li><span>Backend server featuring custom JWT authentication middleware and dynamic binary Excel
+                        generation.</span></li>
+                <li><span>Automated relational SQL schema migrations and resilient connection pooling.</span></li>
+            </ul>
+            <a href="https://epdsportal.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="btn-primary modal-action-btn">
+                <span>View</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+        const mobileNavMenu = document.getElementById('mobile-navigation');
+
+        function setMobileMenu(open) {
+            if (!mobileNavToggle || !mobileNavMenu) return;
+            mobileNavToggle.classList.toggle('is-open', open);
+            mobileNavMenu.classList.toggle('is-open', open);
+            mobileNavToggle.setAttribute('aria-expanded', String(open));
+            mobileNavToggle.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
+            mobileNavMenu.setAttribute('aria-hidden', String(!open));
+        }
+
+        if (mobileNavToggle && mobileNavMenu) {
+            mobileNavToggle.addEventListener('click', () => {
+                setMobileMenu(mobileNavToggle.getAttribute('aria-expanded') !== 'true');
+            });
+
+            mobileNavMenu.querySelectorAll('a').forEach((link) => {
+                link.addEventListener('click', () => setMobileMenu(false));
+            });
+
+            document.addEventListener('pointerdown', (event) => {
+                if (!mobileNavMenu.classList.contains('is-open')) return;
+                if (!mobileNavMenu.contains(event.target) && !mobileNavToggle.contains(event.target)) {
+                    setMobileMenu(false);
+                }
+            });
+
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 768) setMobileMenu(false);
+            }, { passive: true });
+        }
+
+        let lastActiveTrigger = null;
+
+        function openProjectModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                lastActiveTrigger = document.activeElement;
+                modal.removeAttribute('inert');
+                modal.setAttribute('aria-hidden', 'false');
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                if (window.lenis) window.lenis.stop();
+                const dialog = modal.querySelector('.modal-dialog');
+                if (dialog) dialog.scrollTop = 0;
+                const closeBtn = modal.querySelector('.modal-close-btn');
+                if (closeBtn) {
+                    setTimeout(() => closeBtn.focus(), 50);
+                }
+            }
+        }
+
+        function closeProjectModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.remove('active');
+                modal.setAttribute('aria-hidden', 'true');
+                modal.setAttribute('inert', '');
+                const anyOpen = document.querySelector('.modal-backdrop.active');
+                if (!anyOpen) {
+                    document.body.style.overflow = '';
+                    if (window.lenis) window.lenis.start();
+                }
+                if (lastActiveTrigger && typeof lastActiveTrigger.focus === 'function') {
+                    lastActiveTrigger.focus();
+                    lastActiveTrigger = null;
+                }
+            }
+        }
+
+        function handleBackdropClick(e, modalId) {
+            if (e.target.classList.contains('modal-backdrop')) {
+                closeProjectModal(modalId);
+            }
+        }
+
+        function handleProjectCardKey(e, modalId) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                openProjectModal(modalId);
+            }
+        }
+
+        document.addEventListener('keydown', (e) => {
+            const activeModal = document.querySelector('.modal-backdrop.active');
+
+            if (e.key === 'Escape') {
+                if (mobileNavMenu?.classList.contains('is-open')) {
+                    setMobileMenu(false);
+                    mobileNavToggle.focus();
+                }
+                const activeModals = document.querySelectorAll('.modal-backdrop.active');
+                if (activeModals.length > 0) {
+                    activeModals.forEach(modal => closeProjectModal(modal.id));
+                }
+                return;
+            }
+
+            if (e.key === 'Tab' && activeModal) {
+                const focusables = activeModal.querySelectorAll('button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])');
+                if (!focusables.length) return;
+                const first = focusables[0];
+                const last = focusables[focusables.length - 1];
+                if (e.shiftKey && document.activeElement === first) {
+                    e.preventDefault();
+                    last.focus();
+                } else if (!e.shiftKey && document.activeElement === last) {
+                    e.preventDefault();
+                    first.focus();
+                }
+            }
+        });
+
+        // ensure wheel events inside modal dialog don't bubble to lenis/window
+        document.querySelectorAll('.modal-dialog').forEach(dialog => {
+            dialog.addEventListener('wheel', (e) => {
+                e.stopPropagation();
+            }, { passive: true });
+        });
+    </script>
+
+    <!-- interactive role cursor follower -->
+    <div id="role-cursor-follower" class="role-cursor-follower" aria-hidden="true">
+        <img id="role-cursor-img" src="assets/purple-flower.svg" alt="">
+    </div>
+</body>
+
+</html>

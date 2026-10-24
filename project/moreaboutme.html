@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Personal hobbies, interests, music, gaming, and projects by China De Oro.">
+    <meta name="theme-color" content="#000000">
+    <title>More About Me — China De Oro</title>
+    <link rel="icon" href="assets/cdo-logo.svg" type="image/svg+xml">
+
+    <!-- fonts: instrument serif & plus jakarta sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- fontA icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- lenis -->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- scripts: lenis, gsap, scrolltrigger -->
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+
+<body class="roles-page moreabout-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="roles-page-shell">
+        <header class="roles-page-nav">
+            <a class="gallery-back-link" href="index.html#hero">
+                <span>Back to Portfolio</span>
+            </a>
+            <a class="roles-page-logo" href="index.html#hero" aria-label="China De Oro home">
+                <img src="assets/cdo-logo.svg" alt="China De Oro logo">
+            </a>
+        </header>
+
+        <main id="main-content">
+            <section class="roles-page-hero" aria-labelledby="moreabout-title">
+                <img class="roles-page-float roles-page-float-purple" src="assets/purple-flower.svg" alt=""
+                    aria-hidden="true">
+                <img class="roles-page-float roles-page-float-green" src="assets/green-flower.svg" alt=""
+                    aria-hidden="true">
+                <img class="roles-page-float roles-page-float-white" src="assets/white-motif.svg" alt=""
+                    aria-hidden="true">
+
+                <div class="roles-page-title-wrap">
+                    <h1 id="moreabout-title" class="roles-page-title">
+                        <span class="roles-page-title-sans">M</span>ORE <em>&amp;</em><br>
+                        <span class="roles-page-title-sans">A</span>BOUT ME
+                    </h1>
+                    <img class="roles-page-float roles-page-float-orange" src="assets/orange-blob.svg" alt=""
+                        aria-hidden="true">
+                </div>
+                <p class="roles-page-intro">Beyond code and design — a peek into my hobbies, interests, music, and side
+                    quests.</p>
+            </section>
+
+            <section class="moreabout-section" aria-label="Hobbies, interests and passions">
+                <!-- decorative floating background assets -->
+                <img class="roles-timeline-float roles-timeline-float-3" src="assets/blue-wave.svg" alt=""
+                    aria-hidden="true">
+                <img class="roles-timeline-float roles-timeline-float-4" src="assets/orange-blob.svg" alt=""
+                    aria-hidden="true">
+                <img class="roles-timeline-float roles-timeline-float-5" src="assets/purple-flower.svg" alt=""
+                    aria-hidden="true">
+                <img class="roles-timeline-float roles-timeline-float-8" src="assets/white-motif.svg" alt=""
+                    aria-hidden="true">
+
+                <div class="moreabout-grid">
+
+                    <!-- row 1: mbti, music, language -->
+                    <!-- card 1: mbti (intp-t) -->
+                    <article class="bento-card moreabout-card moreabout-purple moreabout-col-3">
+                        <div class="moreabout-bg-media">
+                            <img src="assets/moreabout/intp.webp" alt="INTP Avatar" class="moreabout-bg-img"
+                                loading="lazy">
+                        </div>
+                        <div class="moreabout-overlay"></div>
+                        <div class="moreabout-content">
+                            <div>
+                                <h2 class="moreabout-card-title">INTP-T</h2>
+                                <p class="moreabout-card-desc">The Logician — Innovative with a wandering, intensely
+                                    curious mindset.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- card 2: music & spotify -->
+                    <article class="bento-card moreabout-card moreabout-green moreabout-col-5">
+                        <div class="moreabout-content space-between">
+                            <div>
+                                <h2 class="moreabout-card-title">Music</h2>
+                                <p class="moreabout-card-desc">Huge fan of K-Pop, Indie, J-Pop, and Pop melodics.</p>
+                            </div>
+                            <iframe data-testid="embed-iframe"
+                                style="border-radius:14px; width:100%; height:152px; border:0;"
+                                src="https://open.spotify.com/embed/playlist/6Ccp3gZKD673U0xs5KWZOM?utm_source=generator&theme=0&si=45527558c9b64e7b"
+                                allowfullscreen=""
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy" title="Spotify Playlist"></iframe>
+                        </div>
+                    </article>
+
+                    <!-- card 3: japanese learning -->
+                    <article class="bento-card moreabout-card moreabout-orange moreabout-col-4 moreabout-card-language">
+                        <div class="moreabout-bg-media">
+                            <img src="assets/moreabout/language.webp" alt="Japanese Calligraphy"
+                                class="moreabout-bg-img" loading="lazy">
+                        </div>
+                        <div class="moreabout-overlay"></div>
+                        <div class="moreabout-content">
+                            <div class="moreabout-lang-text-wrap">
+                                <p class="moreabout-jp-text">ひらがなとカタカナは書けるし読めるでも漢字はムズい~</p>
+                                <p class="moreabout-jp-text">今のところ、暇なときに日本語を勉強しています。</p>
+                                <p class="moreabout-en-quote">"I can write and read in both Hiragana and Katakana, but
+                                    Kanji is hard~ For now, I'm studying Japanese in my free time."</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- row 2: anime & gaming -->
+                    <!-- card 4: anime & manga slideshow -->
+                    <article
+                        class="bento-card moreabout-card moreabout-card-tall moreabout-purple moreabout-col-7 moreabout-card-anime"
+                        id="anime-card">
+                        <div class="moreabout-bg-media">
+                            <img id="anime-slide-0" src="assets/moreabout/gokurakugai.webp" alt="Gokurakugai"
+                                class="moreabout-slide active" loading="lazy">
+                            <img id="anime-slide-1" src="assets/moreabout/frieren.webp" alt="Sousou no Frieren"
+                                class="moreabout-slide" loading="lazy">
+                            <img id="anime-slide-2" src="assets/moreabout/apothecary.png" alt="The Apothecary Diaries"
+                                class="moreabout-slide" loading="lazy">
+                            <img id="anime-slide-3" src="assets/moreabout/lycorisrecoil.webp" alt="Lycoris Recoil"
+                                class="moreabout-slide" loading="lazy">
+                            <img id="anime-slide-4" src="assets/moreabout/bocchi.webp" alt="Bocchi the Rock!"
+                                class="moreabout-slide" loading="lazy">
+                        </div>
+                        <div class="moreabout-overlay"></div>
+                        <div class="moreabout-content">
+                            <div class="moreabout-bottom-bar">
+                                <div>
+                                    <h2 id="anime-title-display" class="moreabout-card-title">Gokurakugai (極楽街)</h2>
+                                </div>
+                                <div class="moreabout-carousel-dots" role="tablist" aria-label="Anime carousel slides">
+                                    <button type="button" onclick="setAnimeSlide(0)" class="moreabout-dot active"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" onclick="setAnimeSlide(1)" class="moreabout-dot"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" onclick="setAnimeSlide(2)" class="moreabout-dot"
+                                        aria-label="Slide 3"></button>
+                                    <button type="button" onclick="setAnimeSlide(3)" class="moreabout-dot"
+                                        aria-label="Slide 4"></button>
+                                    <button type="button" onclick="setAnimeSlide(4)" class="moreabout-dot"
+                                        aria-label="Slide 5"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- card 5: gaming slideshow -->
+                    <article class="bento-card moreabout-card moreabout-card-tall moreabout-blue moreabout-col-5">
+                        <div class="moreabout-bg-media">
+                            <img id="gaming-slide-0" src="assets/moreabout/genshin.webp" alt="Genshin Impact"
+                                class="moreabout-slide active" loading="lazy">
+                            <img id="gaming-slide-1" src="assets/moreabout/chess.webp" alt="Chess"
+                                class="moreabout-slide" loading="lazy">
+                            <img id="gaming-slide-2" src="assets/moreabout/pokemon.webp" alt="Pokemon Emerald"
+                                class="moreabout-slide" loading="lazy">
+                        </div>
+                        <div class="moreabout-overlay"></div>
+                        <div class="moreabout-content">
+                            <div class="moreabout-bottom-bar" style="margin-bottom: 4px;">
+                                <h2 id="gaming-title-display" class="moreabout-card-title">Genshin Impact (AR60)</h2>
+                                <div class="moreabout-carousel-dots" role="tablist" aria-label="Gaming carousel slides">
+                                    <button type="button" onclick="setGamingSlide(0)" class="moreabout-dot active"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" onclick="setGamingSlide(1)" class="moreabout-dot"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" onclick="setGamingSlide(2)" class="moreabout-dot"
+                                        aria-label="Slide 3"></button>
+                                </div>
+                            </div>
+                            <div class="moreabout-tags" style="margin-bottom:0; margin-top:8px;">
+                                <a href="https://www.chess.com/member/kleshie" target="_blank" rel="noopener noreferrer"
+                                    class="moreabout-pill-btn">
+                                    <span>Chess.com</span>
+                                </a>
+                                <a href="https://akasha.cv/profile/897903926?build=373e91f92591a697f6480a7e48ada377"
+                                    target="_blank" rel="noopener noreferrer" class="moreabout-pill-btn">
+                                    <span>Akasha</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- row 3: books, movies, electronics -->
+                    <!-- card 6: reading & books -->
+                    <article class="bento-card moreabout-card moreabout-orange moreabout-col-4">
+                        <div class="moreabout-bg-media">
+                            <img src="assets/moreabout/books.png" alt="Books" class="moreabout-bg-img" loading="lazy">
+                        </div>
+                        <div class="moreabout-overlay"></div>
+                        <div class="moreabout-content">
+                            <div>
+                                <h2 class="moreabout-card-title">Favorite Reads</h2>
+                                <div class="moreabout-tags">
+                                    <span class="moreabout-tag">Harry Potter</span>
+                                    <span class="moreabout-tag">Fahrenheit 451</span>
+                                    <span class="moreabout-tag">1984</span>
+                                    <span class="moreabout-tag">Alice Network</span>
+                                    <span class="moreabout-tag">Miss Peregrine</span>
+                                </div>
+                                <a href="https://www.goodreads.com/user/show/190427634" target="_blank"
+                                    rel="noopener noreferrer" class="moreabout-pill-btn">
+                                    <span>Goodreads</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- card 7: movies & series slideshow -->
+                    <article class="bento-card moreabout-card moreabout-purple moreabout-col-4">
+                        <div class="moreabout-bg-media">
+                            <img id="movies-slide-0" src="assets/moreabout/interstellar.webp" alt="Interstellar"
+                                class="moreabout-slide active" loading="lazy">
+                            <img id="movies-slide-1" src="assets/moreabout/imitation.webp" alt="The Imitation Game"
+                                class="moreabout-slide" loading="lazy">
+                            <img id="movies-slide-2" src="assets/moreabout/umbrella.webp" alt="The Umbrella Academy"
+                                class="moreabout-slide" loading="lazy">
+                            <img id="movies-slide-3" src="assets/moreabout/stranger.webp" alt="Stranger Things"
+                                class="moreabout-slide" loading="lazy">
+                            <img id="movies-slide-4" src="assets/moreabout/watermelon.webp" alt="Twinkling Watermelon"
+                                class="moreabout-slide" loading="lazy">
+                            <img id="movies-slide-5" src="assets/moreabout/alchemy.webp" alt="Alchemy of Souls"
+                                class="moreabout-slide" loading="lazy">
+                        </div>
+                        <div class="moreabout-overlay"></div>
+                        <div class="moreabout-content">
+                            <div class="moreabout-bottom-bar" style="margin-bottom: 4px;">
+                                <h2 id="movies-title-display" class="moreabout-card-title">Interstellar</h2>
+                                <div class="moreabout-carousel-dots" role="tablist" aria-label="Movies carousel slides">
+                                    <button type="button" onclick="setMoviesSlide(0)" class="moreabout-dot active"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" onclick="setMoviesSlide(1)" class="moreabout-dot"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" onclick="setMoviesSlide(2)" class="moreabout-dot"
+                                        aria-label="Slide 3"></button>
+                                    <button type="button" onclick="setMoviesSlide(3)" class="moreabout-dot"
+                                        aria-label="Slide 4"></button>
+                                    <button type="button" onclick="setMoviesSlide(4)" class="moreabout-dot"
+                                        aria-label="Slide 5"></button>
+                                    <button type="button" onclick="setMoviesSlide(5)" class="moreabout-dot"
+                                        aria-label="Slide 6"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- card 8: iot & electronics -->
+                    <article class="bento-card moreabout-card moreabout-green moreabout-col-4">
+                        <div class="moreabout-bg-media">
+                            <img src="assets/moreabout/electronics.webp" alt="Electronics Project"
+                                class="moreabout-bg-img" loading="lazy">
+                        </div>
+                        <div class="moreabout-overlay"></div>
+                        <div class="moreabout-content">
+                            <div>
+                                <h2 class="moreabout-card-title">Hardware &amp; IoT</h2>
+                                <p class="moreabout-card-desc" style="margin-bottom: 12px;">
+                                    Automatic plant watering system powered by <strong
+                                        style="color:var(--lime);">ESP8266</strong> and analog soil sensors.
+                                </p>
+                                <a href="https://github.com/lhycerie/YL69-Soil-Moisture-Sensor-Testing-ESP8266"
+                                    target="_blank" rel="noopener noreferrer" class="moreabout-pill-btn">
+                                    <span>ESP8266 Repo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- unified dark portfolio footer -->
+    <footer class="footer-wrap">
+        <div class="footer-top">
+            <div class="footer-col">
+                <h2 class="footer-col-title">Navigation</h2>
+                <ul class="footer-nav">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="index.html#graphics">Graphics</a></li>
+                    <li><a href="index.html#certs">Certifications</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h2 class="footer-col-title">Social</h2>
+                <ul class="footer-nav">
+                    <li><a href="https://github.com/lhycerie" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/china-de-oro/" target="_blank"
+                            rel="noopener noreferrer">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="footer-name" aria-label="China De Oro">
+            <span>China <i>De Oro</i></span>
+        </p>
+
+        <div class="footer-bottom">
+            <span>&copy; 2026 China De Oro. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <!-- controllers & motion -->
+    <script>
+        // lenis smooth scroll
+        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        let lenis = null;
+        if (typeof Lenis !== 'undefined' && !reducedMotion) {
+            lenis = new Lenis({
+                duration: 1.15,
+                easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+                smoothWheel: true,
+            });
+
+            function raf(time) {
+                lenis.raf(time);
+                requestAnimationFrame(raf);
+            }
+            requestAnimationFrame(raf);
+        }
+
+        // gsap batch reveal for more about me cards
+        if (window.gsap && window.ScrollTrigger && !reducedMotion) {
+            gsap.registerPlugin(ScrollTrigger);
+
+            const cards = document.querySelectorAll('.moreabout-card');
+            if (cards.length) {
+                gsap.set(cards, { opacity: 0, y: 60, scale: 0.95 });
+                ScrollTrigger.batch(cards, {
+                    start: 'top 88%',
+                    once: true,
+                    onEnter: (batch) => {
+                        gsap.to(batch, {
+                            opacity: 1,
+                            y: 0,
+                            scale: 1,
+                            duration: 0.85,
+                            ease: 'power3.out',
+                            stagger: 0.14,
+                            onComplete: () => {
+                                batch.forEach(card => gsap.set(card, { clearProps: 'transform,opacity,scale' }));
+                            }
+                        });
+                    }
+                });
+            }
+
+            window.addEventListener('load', () => {
+                ScrollTrigger.refresh();
+            });
+        }
+
+        // 1. anime slideshow controller
+        const animeTitles = [
+            "Gokurakugai (極楽街)",
+            "Sousou no Frieren (葬送のフリーレン)",
+            "The Apothecary Diaries (薬屋のひとりごと)",
+            "Lycoris Recoil (リコリス・リコイル)",
+            "Bocchi the Rock! (ぼっち・ざ・ろっく！)"
+        ];
+        let currentAnimeIndex = 0;
+        let animeTimer = null;
+
+        function setAnimeSlide(index) {
+            currentAnimeIndex = index;
+            const titleDisplay = document.getElementById('anime-title-display');
+            const card = titleDisplay ? titleDisplay.closest('.moreabout-card') : document;
+            const slides = [
+                document.getElementById('anime-slide-0'),
+                document.getElementById('anime-slide-1'),
+                document.getElementById('anime-slide-2'),
+                document.getElementById('anime-slide-3'),
+                document.getElementById('anime-slide-4')
+            ];
+            const dots = card ? card.querySelectorAll('.moreabout-carousel-dots .moreabout-dot') : [];
+
+            slides.forEach((slide, i) => {
+                if (slide) slide.classList.toggle('active', i === index);
+            });
+
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+
+            if (titleDisplay && animeTitles[index]) {
+                titleDisplay.textContent = animeTitles[index];
+            }
+
+            resetAnimeTimer();
+        }
+
+        function nextAnimeSlide() {
+            setAnimeSlide((currentAnimeIndex + 1) % animeTitles.length);
+        }
+
+        function resetAnimeTimer() {
+            if (animeTimer) clearInterval(animeTimer);
+            if (!reducedMotion) {
+                animeTimer = setInterval(nextAnimeSlide, 3600);
+            }
+        }
+
+        // 2. gaming slideshow controller
+        const gamingTitles = [
+            "Genshin Impact (AR60)",
+            "Chess.com",
+            "Pokémon Emerald & Crystal Version"
+        ];
+        let currentGamingIndex = 0;
+        let gamingTimer = null;
+
+        function setGamingSlide(index) {
+            currentGamingIndex = index;
+            const titleDisplay = document.getElementById('gaming-title-display');
+            const card = titleDisplay ? titleDisplay.closest('.moreabout-card') : document;
+            const slides = [
+                document.getElementById('gaming-slide-0'),
+                document.getElementById('gaming-slide-1'),
+                document.getElementById('gaming-slide-2')
+            ];
+            const dots = card ? card.querySelectorAll('.moreabout-carousel-dots .moreabout-dot') : [];
+
+            slides.forEach((slide, i) => {
+                if (slide) slide.classList.toggle('active', i === index);
+            });
+
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+
+            if (titleDisplay && gamingTitles[index]) {
+                titleDisplay.textContent = gamingTitles[index];
+            }
+
+            resetGamingTimer();
+        }
+
+        function nextGamingSlide() {
+            setGamingSlide((currentGamingIndex + 1) % gamingTitles.length);
+        }
+
+        function resetGamingTimer() {
+            if (gamingTimer) clearInterval(gamingTimer);
+            if (!reducedMotion) {
+                gamingTimer = setInterval(nextGamingSlide, 4000);
+            }
+        }
+
+        // 3. movies & series slideshow controller
+        const moviesTitles = [
+            "Interstellar",
+            "The Imitation Game",
+            "The Umbrella Academy",
+            "Stranger Things",
+            "Twinkling Watermelon",
+            "Alchemy of Souls (환혼)"
+        ];
+        let currentMoviesIndex = 0;
+        let moviesTimer = null;
+
+        function setMoviesSlide(index) {
+            currentMoviesIndex = index;
+            const titleDisplay = document.getElementById('movies-title-display');
+            const card = titleDisplay ? titleDisplay.closest('.moreabout-card') : document;
+            const slides = [
+                document.getElementById('movies-slide-0'),
+                document.getElementById('movies-slide-1'),
+                document.getElementById('movies-slide-2'),
+                document.getElementById('movies-slide-3'),
+                document.getElementById('movies-slide-4'),
+                document.getElementById('movies-slide-5')
+            ];
+            const dots = card ? card.querySelectorAll('.moreabout-carousel-dots .moreabout-dot') : [];
+
+            slides.forEach((slide, i) => {
+                if (slide) slide.classList.toggle('active', i === index);
+            });
+
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+
+            if (titleDisplay && moviesTitles[index]) {
+                titleDisplay.textContent = moviesTitles[index];
+            }
+
+            resetMoviesTimer();
+        }
+
+        function nextMoviesSlide() {
+            setMoviesSlide((currentMoviesIndex + 1) % moviesTitles.length);
+        }
+
+        function resetMoviesTimer() {
+            if (moviesTimer) clearInterval(moviesTimer);
+            if (!reducedMotion) {
+                moviesTimer = setInterval(nextMoviesSlide, 3800);
+            }
+        }
+
+        // initialize slideshows and motion listeners on dom ready
+        document.addEventListener('DOMContentLoaded', () => {
+            const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+            motionQuery.addEventListener('change', (e) => {
+                reducedMotion = e.matches;
+                if (reducedMotion) {
+                    if (animeTimer) clearInterval(animeTimer);
+                    if (gamingTimer) clearInterval(gamingTimer);
+                    if (moviesTimer) clearInterval(moviesTimer);
+                } else {
+                    resetAnimeTimer();
+                    resetGamingTimer();
+                    resetMoviesTimer();
+                }
+            });
+
+            // pause on hover/focus for each slideshow card
+            const bindPauseOnHover = (titleId, resetFn, timerGetter) => {
+                const card = document.getElementById(titleId)?.closest('.moreabout-card');
+                if (!card) return;
+                card.addEventListener('mouseenter', () => {
+                    if (!reducedMotion) clearInterval(timerGetter());
+                });
+                card.addEventListener('mouseleave', () => {
+                    if (!reducedMotion) resetFn();
+                });
+                card.addEventListener('focusin', () => {
+                    if (!reducedMotion) clearInterval(timerGetter());
+                });
+                card.addEventListener('focusout', (e) => {
+                    if (!card.contains(e.relatedTarget) && !reducedMotion) resetFn();
+                });
+            };
+
+            bindPauseOnHover('anime-title-display', resetAnimeTimer, () => animeTimer);
+            bindPauseOnHover('gaming-title-display', resetGamingTimer, () => gamingTimer);
+            bindPauseOnHover('movies-title-display', resetMoviesTimer, () => moviesTimer);
+
+            resetAnimeTimer();
+            resetGamingTimer();
+            resetMoviesTimer();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">TypeScript</title>
+  <rect width="128" height="128" rx="10" fill="#3178C6"/>
+  <path fill="#fff" d="M18 34h50v11H49v58H37V45H18V34Z"/>
+  <path fill="#fff" d="M108 49c-6-7-14-10-23-10-13 0-22 7-22 18 0 12 8 16 22 20 9 3 13 5 13 10 0 5-5 8-12 8-9 0-17-4-23-11l-7 9c7 9 18 14 30 14 15 0 25-8 25-21 0-12-8-17-23-21-9-3-12-5-12-9 0-4 4-7 10-7 7 0 12 3 17 8l5-8Z"/>
+</svg>
